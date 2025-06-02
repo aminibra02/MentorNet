@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home - MentorMatch{% endblock %}
+
+{% block content %}
+<h1>Welcome to MentorMatch!</h1>
+<p style="text-align: center;">Find a mentor or offer your expertise. Sign up today!</p>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{{ url_for('student_signup') }}" class="btn">Student Signup</a>
+    <a href="{{ url_for('mentor_signup') }}" class="btn btn-success" style="margin-left: 15px;">Mentor Signup</a>
+</div>
+{% endblock %}
