@@ -21,6 +21,7 @@
     </header>
 
     <main>
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 <div class="flashes">
@@ -33,7 +34,9 @@
             {% endif %}
         {% endwith %}
         {% block content %}{% endblock %}
-    </main>
+    </div>
+</main>
+
 
     <footer>
         <p>&copy; 2023 MentorMatch App</p>
